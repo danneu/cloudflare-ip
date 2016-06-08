@@ -1,6 +1,10 @@
 
 # cloudflare-ip
 
+[![Build Status](https://travis-ci.org/danneu/cloudflare-ip.svg?branch=master)](https://travis-ci.org/danneu/cloudflare-ip)
+[![NPM version](https://badge.fury.io/js/cloudflare-ip.svg)](http://badge.fury.io/js/cloudflare-ip)
+[![Dependency Status](https://david-dm.org/danneu/cloudflare-ip.svg)](https://david-dm.org/danneu/cloudflare-ip)
+
 Check if an IP address is in Cloudflare's IP address range.
 
 Cloudflare's IP addresses are [pubicly available](https://www.cloudflare.com/ips/).
