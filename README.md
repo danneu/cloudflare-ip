@@ -15,8 +15,8 @@ by setting headers that you thought you could depend on like X-Forwarded-For.
 Chuck this library into some upstream middleware to short-circuit on
 requests that aren't coming from Cloudflare.
 
-Scroll down to the "Enforcing X-Forwarded-For" section for some
-further thoughts.
+Scroll down to the [Enforcing X-Forwarded-For](#enforcing-x-forwarded-for) 
+section for some further thoughts.
 
 ## Install
 
