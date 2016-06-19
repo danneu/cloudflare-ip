@@ -31,16 +31,16 @@ const cloudflareIp = require('cloudflare-ip');
 cloudflareIp('66.249.66.1')                // false
 cloudflareIp('1.1.1.1')                    // false
 // localhost should be false
-cloudflareIp('127.0.0.1'))                 // false
-cloudflareIp('::1'))                       // false
+cloudflareIp('127.0.0.1')                 // false
+cloudflareIp('::1')                       // false
 // garbage should be false
 cloudflareIp()                             // false
 cloudflareIp('')                           // false
 cloudflareIp(0)                            // false
 cloudflareIp('chicken')                    // false
 // cloudflare ips should pass
-cloudflareIp('103.21.244.0'))              // true
-cloudflareIp('2400:cb00::0000::0000'))     // true
+cloudflareIp('103.21.244.0')              // true
+cloudflareIp('2400:cb00::0000::0000')     // true
 ```
 
 ## Syncing with Cloudflare
