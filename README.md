@@ -40,7 +40,7 @@ cloudflareIp(0)                            // false
 cloudflareIp('chicken')                    // false
 // cloudflare ips should pass
 cloudflareIp('103.21.244.0')              // true
-cloudflareIp('2400:cb00::0000::0000')     // true
+cloudflareIp('2400:cb00::0000::0000')     // false
 ```
 
 ## Syncing with Cloudflare

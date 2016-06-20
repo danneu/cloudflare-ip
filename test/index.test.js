@@ -35,6 +35,6 @@ describe('localhost', () => {
 describe('cloudflare IPs', () => {
   it('is true', () => {
     assert.isTrue(cloudflareIp('103.21.244.0'));
-    assert.isTrue(cloudflareIp('2400:cb00::0000::0000'));
+    assert.isFalse(cloudflareIp('2400:cb00::0000::0000')); //should be false, you can only do "::" once. https://en.wikipedia.org/wiki/IPv6_address
   })
 })
