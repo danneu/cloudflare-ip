@@ -1,6 +1,6 @@
 {
   "name": "cloudflare-ip",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Check if an IP address is one of Cloudflare's",
   "main": "index.js",
   "repository": {
