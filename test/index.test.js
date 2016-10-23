@@ -15,6 +15,7 @@ describe('falsey values', () => {
 describe('garbage string values', () => {
   it('is false', () => {
     assert.isFalse(cloudflareIp('chicken'))
+    assert.isFalse(cloudflareIp('2400:cb00::0000::0000'))
   })
 })
 
