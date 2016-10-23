@@ -38,4 +38,7 @@ describe('cloudflare IPs', () => {
     assert.isTrue(cloudflareIp('2400:cb00:0000::0000'))
     assert.isTrue(cloudflareIp('108.162.212.58'))
   })
+  it('handles whitespace', () => {
+    assert.isTrue(cloudflareIp(' 103.21.244.0 '))
+  })
 })

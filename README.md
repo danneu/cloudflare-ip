@@ -98,7 +98,7 @@ Example middleware:
 app.use(function * (next) {
   if (config.NODE_ENV !== 'production') yield next
   if (!this.get('x-forwarded-for')) return
-  const fwd = this.get('x-forwarded-for').split(',').map((s) => s.trim())
+  const fwd = this.get('x-forwarded-for').split(',')
   if (fwd.length !== 2) return
   if (!cloudflareIp(fwd[1])) return
   yield next

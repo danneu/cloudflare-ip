@@ -11,6 +11,7 @@ const cloudflareIps = JSON.parse(fs.readFileSync(listPath, 'utf8'))
 
 // returns undefined | Address4 | Address6
 function intoAddress (str) {
+  if (typeof str === 'string') str = str.trim()
   let ip = new Address6(str)
   if (ip.v4 && !ip.valid) {
     ip = new Address4(str)
