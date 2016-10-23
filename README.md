@@ -92,6 +92,19 @@ The simplest solution in this example would be to validate the 2nd
 X-Forwarded-For IP address but also ensure that X-Forwarded-For has 
 exactly two IP addresses.
 
+Example middleware:
+
+``` javascript
+app.use(function * (next) {
+  if (config.NODE_ENV !== 'production') yield next
+  if (!this.get('x-forwarded-for')) return
+  const fwd = this.get('x-forwarded-for').split(',').map((s) => s.trim())
+  if (fwd.length !== 2) return
+  if (!cloudflareIp(fwd[1])) return
+  yield next
+})
+```
+
 ### Example 2: App <- Cloudflare
 
 If your app is running on port 80 and is only behind Cloudflare, then 
