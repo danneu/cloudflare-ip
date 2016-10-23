@@ -20,8 +20,8 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "fetch": "^1.1.0",
-    "mocha": "^2.5.3"
+    "mocha": "^2.5.3",
+    "node-fetch": "^1.6.3"
   },
   "homepage": "https://github.com/danneu/cloudflare-ip",
   "author": "Dan Neumann <danrodneu@gmail.com> (https://github.com/danneu)",
