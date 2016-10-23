@@ -3,7 +3,8 @@
 const fs = require('fs')
 const nodePath = require('path')
 // 3rd
-const {Address4, Address6} = require('ip-address')
+const Address4 = require('ip-address').Address4
+const Address6 = require('ip-address').Address6
 
 const listPath = nodePath.join(__dirname, 'ips.json')
 const cloudflareIps = JSON.parse(fs.readFileSync(listPath, 'utf8'))
